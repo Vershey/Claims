@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2dc36985831c62109a6cc7b6feaad3eb" label="Claims" max_length="40" name="x_1625773_claims_claims" type="collection">
+        <element choice="3" display="true" label="Status" max_length="40" name="status" type="radio">
+            <choice>
+                <element inactive_on_update="false" label="Symbols(1-6)" sequence="0" value="Symbols"/>
+                <element inactive_on_update="false" label="General Liablity" sequence="1" value="General Liablity"/>
+            </choice>
+        </element>
+        <element default="150000" label="Medical Payment" max_length="20" name="medical_payment" type="price"/>
+        <element default="500" label="Towering Label Per Payment" max_length="20" name="towering_label_per_payment" type="price"/>
+        <element default="100000" label="Combined Single Amount" max_length="20" name="combined_single_amount" type="currency"/>
+        <element default="150000" label="UnInsured Motorist Value" max_length="20" name="uninsured_motorist_value" type="price"/>
+        <element active="false" default="Carrer 2 Insurance" label="Issuing Paper" max_length="40" name="issuing_paper" read_only="true" type="string_full_utf8"/>
+        <element active="false" choice="1" label="Towering and Labour/Per Displacement" max_length="40" name="towering_and_labour_per_displacement" read_only="true" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="$50 Dollars" sequence="0" value="123456"/>
+            </choice>
+        </element>
+        <element choice="1" label="Carrer" max_length="40" name="carrer" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Quote 4" sequence="3" value="quote_4"/>
+                <element inactive_on_update="false" label="Quote1" sequence="0" value="quote1"/>
+                <element inactive_on_update="false" label="Quote 2" sequence="1" value="quote_2"/>
+                <element inactive_on_update="false" label="Quote 3" sequence="2" value="quote_3"/>
+            </choice>
+        </element>
+    </element>
+</database>
